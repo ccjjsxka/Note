@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">记事本</string>
+    <string name="text1">暂无更多</string>
+    <string name="item1">删除</string>
+    <string name="item2">保存</string>
+    <string name="text_title">标题</string>
+    <string name="text_content">内容</string>
+    <string name="add">增加</string>
+</resources>
