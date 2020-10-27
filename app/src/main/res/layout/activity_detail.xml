@@ -27,8 +27,8 @@
     <EditText
         android:id="@+id/detail_content"
         android:layout_width="350dp"
-        android:layout_height="200dp"
-        android:layout_marginBottom="88dp"
+        android:layout_height="500dp"
+        android:layout_marginBottom="60dp"
         android:background="@android:drawable/edit_text"
         android:gravity="top"
         android:hint="@string/text_content"
@@ -41,16 +41,4 @@
         app:layout_constraintHorizontal_bias="0.491"
         app:layout_constraintStart_toStartOf="parent" />
 
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="86dp"
-        android:layout_marginTop="84dp"
-        android:layout_marginEnd="87dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@mipmap/pic2" />
 </androidx.constraintlayout.widget.ConstraintLayout>

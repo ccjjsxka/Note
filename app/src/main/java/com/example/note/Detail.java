@@ -10,7 +10,10 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.view.WindowManager;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.Toast;
 
 import static com.example.note.DatabaseHelper.TABLE_NAME;
@@ -30,6 +33,7 @@ public class Detail extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_detail);
+        getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_ADJUST_PAN);
         title = findViewById(R.id.detail_title);
         content = findViewById(R.id.detail_content);
         title.setSelection(title.getText().length());
@@ -48,7 +52,7 @@ public class Detail extends AppCompatActivity {
                     String select_content = cursor.getString(cursor.getColumnIndex("content"));
                     title.setText(select_title);
                     content.setText(select_content);
-                    Log.d("Ditail","title:"+select_title);
+                    Log.d("Detail","title:"+select_title);
                     Log.d("Detail","content"+select_content);
                 }
                 break;
